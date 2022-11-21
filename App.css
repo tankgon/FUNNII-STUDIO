@@ -24,9 +24,28 @@ body {
   justify-content: space-between;
   margin-top: 300px !important;
 }
+@media (max-width: 768px) {
+  .content {
+    display: block;
+    margin: auto;
+  }
+  .macbook {
+    width: 150px;
+    height: 96px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -300px 0 0 -48px !important;
+    perspective: 500px;
+  }
+  .content_render{
+    background-color: #262cd9;
+    width: 100% !important;
+  }
+}
 .content_render{
   background-color: #262cd9;
-  width: 30% !important;
+  width: 30% ;
 }
 .content_botton{
   display: flex;
@@ -50,7 +69,6 @@ body {
   top: 50%;
   margin: -200px 0 0 -48px;
   perspective: 500px;
-  
 }
 .shadow {
   position: absolute;
